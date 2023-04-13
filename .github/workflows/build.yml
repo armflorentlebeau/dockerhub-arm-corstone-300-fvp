@@ -33,7 +33,6 @@ jobs:
       - name: Build and push to Docker Hub
         uses: docker/build-push-action@v4
         with:
-          platforms: arm64
           push: true
           builder: ${{ steps.buildx.outputs.name }}
           build-args: |
